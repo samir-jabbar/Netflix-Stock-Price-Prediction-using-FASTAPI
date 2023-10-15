@@ -1,7 +1,5 @@
 # Netflix-Stock-Price-Prediction-using-FASTAPI
 
-# Netflix Stock Price Prediction using FastAPI
-
 This project is an implementation of a Netflix stock price prediction model using FastAPI, a modern web framework for building APIs with Python. The project includes several files that are essential for the stock price prediction and serving it through an API. Below, you will find an overview of the files in this repository.
 
 ## Files
@@ -43,20 +41,10 @@ To get started with this project, follow these steps:
 This project defines several API endpoints, including but not limited to:
 
 - `/predict`: Predict the Netflix stock price for a given date.
-- `/historical_data`: Retrieve historical stock price data.
 
 For detailed documentation on how to use these endpoints, please refer to the FastAPI application and the API documentation.
 
 ## Contributors
 
-- [Your Name]
+- Samir JABBAR
 
-## License
-
-This project is licensed under the [License Name] license. Please refer to the `LICENSE` file for more details.
-
-## Acknowledgments
-
-- Acknowledgment or credits to any libraries, data sources, or tutorials used in the project.
-
-Feel free to modify and expand upon this README file to provide more specific information about your project, its usage, and any additional instructions.
