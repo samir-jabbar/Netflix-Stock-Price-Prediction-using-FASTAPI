@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Prediction</title>
+</head>
+<body>
+    <div id="wrap" style="text-align: center; padding: 20px;">
+        <h1 style="font-size: 24px;">Predict Stock Prices</h1>
+
+        <section id="stock" style="border: 1px solid #ccc; padding: 20px; display: inline-block;">
+            <div class="login" style="text-align: left;">
+                <form action="/predict" method="post">
+                    <table class="entryForm" style="margin: 0 auto;">
+                        <tr>
+                            <th style="padding-right: 10px;">Open:</th>
+                            <td><input type="text" name="open" style="padding: 5px;" placeholder="Open Price" required="required" /></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-right: 10px;">High:</th>
+                            <td><input type="text" name="high" style="padding: 5px;" placeholder="High Price" required="required" /></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-right: 10px;">Low:</th>
+                            <td><input type="text" name="low" style="padding: 5px;" placeholder="Low Price" required="required" /></td>
+                        </tr>
+                        <tr>
+                            <th style="padding-right: 10px;">Volume:</th>
+                            <td><input type="text" name="volume" style="padding: 5px;" placeholder="Volume" required="required" /></td>
+                        </tr>
+                    </table>
+                    <div class="btns" style="margin-top: 10px;">
+                        <button type="reset" style="padding: 5px 10px; background-color: #ccc;">Reset</button>
+                        <button type="submit" style="padding: 5px 10px; background-color: #007BFF; color: #fff;">Predict</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        {{prediction}}
+        <div id="prediction_text" style="font-size: 18px;"></div>
+    </div>
+</body>
+</html>
